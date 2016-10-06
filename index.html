@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="keywords" content=""/>
+    <meta name="author" lang="fr" content=""/>
+    <meta name="generator" content="Sublime-text"/>
+    <meta name="description" content=""/>
+    <meta name="identifier-url" content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Le jeu du + ou -</title>
+    <link rel="shortcut icon" href=""/>
+  </head>
+  <body>
+        <script> 
+        // Fonction générant l'aléatoire
+
+function nb_aleatoire(min, max)
+{
+    var nb = min + (max-min+1)*Math.random();
+    return Math.floor(nb);
+}
+
+// Nombre à deviner
+var nb = nb_aleatoire(1, 100);
+// Nombre de coups
+var coup = 0
+
+var saisie;
+
+var msg = 'Le nombre à deviner est compris entre 1 et 100';
+
+do
+{
+
+    saisie = prompt(msg);
+    coup++;
+
+    if(saisie > nb)
+        msg = "C'est - ";
+    else
+        msg = "c'est + ";
+}
+
+while(saisie != nb);
+
+alert("Tu es un génie, tu as gagné en seulement " + coup + "coups !");
+        </script>
+  </body>
+</html>
