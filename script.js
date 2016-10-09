@@ -3,7 +3,7 @@
 for(var i=0,t=[];i<document.getElementsByTagName("*").length;i++){
   t[document.getElementsByTagName("*")[i].id]=document.getElementsByTagName("*")[i]
 }
-var tableau = ['Tu déconne ? Cest moins >_<', 'moins poto ! moins !', 'ahaha, not even close'];
+var tableau = ['Tu déconnes ? Cest moins >_<', 'moins poto ! moins !', 'ahaha, not even close'];
 var has = Math.floor(Math.random()*101);
 var plus=1;
  
@@ -36,7 +36,7 @@ t.go.onclick=function(){
     this.value="Continuer de try hard ?";
     has = Math.floor(Math.random()*101);
     // On affiche dans une boite de dialogue le nombre de coup
-    alert("Bravo, tu as battu le developpeur qui a codé ce jeu de ouf. Le FBI va te recruter. Nombre de coups: " + plus);
+    alert("Bravo, tu as battu le développeur qui a codé ce jeu de ouf. Le FBI va te recruter. Nombre de coups: " + plus);
     plus=1;
   }
 }
